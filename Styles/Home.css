@@ -67,6 +67,24 @@ body {
       font-size: 60px;
       font-weight: 300;
     }
+
+    button {
+      transition: all 0.5s linear;
+
+      margin-top: 45px;
+      font-size: 20px;
+      padding: 15px;
+      border: 0;
+      border-right: rgb(255, 255, 255) 1px solid;
+      border-left: rgb(255, 255, 255) 1px solid;
+
+      color: #ffffff;
+      background-color: #ffffff00;
+    }
+    button:hover {
+      box-shadow: 0 0px 16px 0 rgba(255, 255, 255, 0.24),
+                  0 0px 50px 0 rgba(255, 255, 255, 0.19);
+    }
   }
 }
 
