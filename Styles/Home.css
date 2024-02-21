@@ -1,11 +1,7 @@
-
-html, body {
-  margin: 0;  
-}
-
 body {
-  color:#ffffff;
-  background:#323232;
+  color: #ffffff;
+  background: #0e0e0e;
+  overflow-x: hidden;
 }
 
 .aboutContainer {
@@ -13,14 +9,17 @@ body {
 }
 
 .imageWapper {
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  height: 100vh;
+  width: 100%;
+
+  img {
+    height: 100%;
     width: 100%;
-    img {
-        width: 100%;
-    }
+  }
 }
 
 .introductionHome {
@@ -28,7 +27,6 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
-  user-select: none;
   width: 100%;
 
   img {
@@ -49,6 +47,7 @@ body {
       font-size: 70px;
       font-weight: 300;
     }
+
     h2 {
       font-weight: 700;
       font-size: 70px;
@@ -62,9 +61,105 @@ body {
     opacity: 0;
     text-align: center;
     position: absolute;
+    padding: 5px;
+
     p {
       font-size: 60px;
       font-weight: 300;
     }
   }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .introductionHome {
+    img {
+      width: 45%;
+    }
+
+    .openingText {
+      h1 {
+        font-size: 60px;
+      }
+
+      h2 {
+        font-size: 60px;
+      }
+    }
+
+    .sloganText {
+      p {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .introductionHome {
+    img {
+      width: 50%;
+    }
+
+    .openingText {
+      h1 {
+        font-size: 50px;
+      }
+
+      h2 {
+        font-size: 50px;
+      }
+    }
+
+    .sloganText {
+      p {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 541px) {
+
+  .introductionHome {
+    .openingText {
+      h1 {
+        font-size: 38px;
+      }
+
+      h2 {
+        font-size: 38px;
+      }
+    }
+
+    .sloganText {
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 300px) {
+
+  .introductionHome {
+    .openingText {
+      h1 {
+        font-size: 30px;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+    }
+
+    .sloganText {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
 }
