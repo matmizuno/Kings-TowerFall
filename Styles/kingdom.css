@@ -22,32 +22,61 @@ header
 #logo_sec img
 {
     width: 60%;
-    border-left: 5px solid black;
-    padding-left: 20px;
 }
-
+#logo_sec
+{
+    border-right: 5px solid black;
+}
+#logos
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#logos h1
+{
+    padding-left: 10px;
+}
 #nav_list
 {
     display: flex;
     list-style: none;
-    gap: 7rem;
+    gap: 5rem;
 }
-.nav_item a
+.nav_link
 {
     text-decoration: none;
     color: black;
     font-weight: 500;
     text-transform: lowercase;
     font-size: 1.1rem;
-    height: 100%;  
     cursor: pointer;
+    padding: 0 10px;
+    position: relative;
 }
-.nav_item a:hover
+.nav_link::after
+{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+}
+.nav_link:hover::after
 {
     color: white;
     transition: color 0.5s ease-in-out;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
 }
-
+.nav_link:hover
+{
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
 #btn_comprar
 {
     background: transparent;
@@ -110,4 +139,17 @@ header
     height: 100%;
     padding-bottom: 3rem;
     font-size: 2rem;
+    animation: up-down 2s ease-in-out infinite;
+}
+
+@keyframes up-down {
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
 }
