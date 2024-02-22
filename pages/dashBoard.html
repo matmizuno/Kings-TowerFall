@@ -4,29 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/dasboard.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <div class="iten1">
-            <div class="texts">
+        <div class="home-dash">
+            <div class="texts" data-aos="fade-left">
                 <div class="title">
-                    <h2>Seja Bem vindo ao <br>nosso Dashboard.</h2>
+                    <h2>Seja Bem vindo ao<br>nosso Dashboard.</h2>
                 </div>
-                <div class="text">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, nobis <br> pariatur excepturi vel perspiciatis eum iure doloremque laborum unde <br>necessitatibus recusandae explicabo accusamus quos, non quibusdam <br> alias! Sunt, voluptatum ex!</p>
+                <div class="text_introducao-icon">
+                    <p>No dashboard oferecemos uma variedade de painéis e widgets que fornece resumos das atividades recentes, notificações importantes e insights valiosos, permitindo que você vizualize o progresso, analise tendências e tome decisões informadas.</p>
+                    <div class="icon">
+                       <a href="#geral"><img class="arrow-icon" src="../assets/icons/arrow.png" alt=""></a>
+                    </div>
                 </div>
-            </div>
-            <div class="arrow-icon">
-                <img id="arrow" src="assets/icons/arrow.png" alt="">
-            </div>
-           
-        </div>
-        <div class="iten2">
-           
-        </div>
+            </div>   
+        </div>   
     </div>
+
+    <div class="geral" id="geral">
+        <!-- cards com Bootstrap pro Ivan n encher o saco-->
+    </div>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
