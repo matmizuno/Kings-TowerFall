@@ -1,5 +1,113 @@
 body
 {
     width: 100%;
+    height: 100vh;
+    background-image: url(../assets/background_kingdom.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+header
+{
+    width: 100%;
+    padding: 10px 55px;
+    backdrop-filter: blur(4px);
+}
+#navbar
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo_sec img
+{
+    width: 60%;
+    border-left: 5px solid black;
+    padding-left: 20px;
+}
+
+#nav_list
+{
+    display: flex;
+    list-style: none;
+    gap: 7rem;
+}
+.nav_item a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    text-transform: lowercase;
+    font-size: 1.1rem;
+    height: 100%;  
+    cursor: pointer;
+}
+.nav_item a:hover
+{
+    color: white;
+    transition: color 0.5s ease-in-out;
+}
+
+#btn_comprar
+{
+    background: transparent;
+    border: none;
+    border: 3px solid black;
+    padding: 0px 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#btn_comprar:hover
+{
     background-color: black;
+    border:3px solid black;
+    color: white;
+    transition: all .5s ease-in-out;
+}
+#user_area
+{
+    display: flex;
+    gap: 3rem;
+}
+
+#user_area span 
+{
+    background-color: #5f5b5b;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: black;
+    font-size: 1.1rem;
+}
+.sec1
+{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+#titulo_jogo
+{
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+}
+#titulo_jogo img
+{
+    width: 50%;
+}
+#arrow
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 3rem;
+    font-size: 2rem;
 }
