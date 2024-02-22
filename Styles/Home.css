@@ -67,33 +67,97 @@ body {
       font-size: 60px;
       font-weight: 300;
     }
+  }
+}
 
-    button {
-      transition: all 0.5s linear;
+.whoWeAre {
+  height: 100vh;
+  width: 100%;
 
-      margin-top: 45px;
-      font-size: 20px;
-      padding: 15px;
-      border: 0;
-      border-right: rgb(255, 255, 255) 1px solid;
-      border-left: rgb(255, 255, 255) 1px solid;
+  .imgBackground {
+    height: 40%;
+    background-image: url("../assets/backgroundTest.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 
-      color: #ffffff;
-      background-color: #ffffff00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+      font-size: 70px;
     }
 
-    button:hover {
-      box-shadow: 0 0px 16px 0 rgba(255, 255, 255, 0.24),
-        0 0px 50px 0 rgba(255, 255, 255, 0.19);
+    p {
+      font-size: 25px;
+      margin-top: 1%;
     }
+  }
 
-    button:active {
-      transition: all 0.1s linear;
+  .participantsCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2%;
 
-      box-shadow: 0 0px 5px 0 rgba(255, 255, 255, 0.24),
-        0 0px 30px 0 rgba(255, 255, 255, 0.19);
-      transform: scale(0.9);
-      padding: 12px;
+    width: 100%;
+    height: 50%;
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      width: 480px;
+      height: 500px;
+      margin: 10px;
+      background-color: rgba(0, 0, 0, 0);
+
+      .img {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 78%;
+        img {
+          transition: all 0.2s ease-out;
+
+        }
+      }
+
+      .img img:hover {
+        transform: scale(1.2);
+      }
+
+      .informations {
+        margin-top: 2%;
+        height: 20%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left {
+          h3 {
+            font-size: 30px;
+            font-weight: 700;
+          }
+          p {
+            font-size: 18px;
+            font-weight: 300;
+          }
+        }
+
+        img {
+          width: 18%;
+          border-radius: 50%;
+        }
+      }
     }
   }
 }
