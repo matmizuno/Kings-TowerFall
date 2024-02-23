@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
     
 <head>
     <meta charset="UTF-8">
@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="../styles/dashboard.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Dashboard</title>
 </head>
 <body>
-    <div class="container">
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand">Kingdom Algorithm</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" id="inp" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </nav>
+    <div class="container-home">
         <div class="home-dash">
             <div class="texts" data-aos="fade-left">
                 <div class="title">
-                    <h2>Seja Bem vindo ao<br>nosso Dashboard.</h2>
+                    <h2>Seja Bem vindo <br> ao nosso Dashboard.</h2>
                 </div>
                 <div class="text_introducao-icon">
                     <p>No dashboard oferecemos uma variedade de painéis e widgets que fornece resumos das atividades recentes, notificações importantes e insights valiosos, permitindo que você vizualize o progresso, analise tendências e tome decisões informadas.</p>
@@ -25,9 +35,8 @@
             </div>   
         </div>   
     </div>
-
     <div class="geral" id="geral">
-        <!-- cards com Bootstrap pro Ivan n encher o saco-->
+       
     </div>
     <script>
         AOS.init();
