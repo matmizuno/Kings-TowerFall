@@ -19,3 +19,5 @@ window.addEventListener("scroll", () => {
     if (window.scrollY > (window.innerHeight * 1.8)) { openingText.style.opacity = "0"; sloganText.style.display = "inline" } else { sloganText.style.display = "none"; }
     if (window.scrollY > (window.innerHeight * 2.2)) { sloganText.style.opacity = "1"; } else { sloganText.style.opacity = "0" }
 })
+
+AOS.init();
