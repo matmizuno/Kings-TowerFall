@@ -166,10 +166,10 @@ body {
 }
 
 .whoWeAre {
-  height: 100vh;
   width: 100%;
 
   .imgBackground {
+    overflow: hidden;
     height: 40%;
     background-image: url("../assets/backgroundTest.png");
     background-position: center;
@@ -193,6 +193,7 @@ body {
   }
 
   .participantsCards {
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -341,7 +342,6 @@ body {
       .card {
         width: 80%;
         height: 600px;
-        margin: 10px;
 
         .img {
           width: 100%;
@@ -394,6 +394,51 @@ body {
       }
     }
   }
+
+  .whoWeAre {
+    .imgBackground {
+      height: 40%;
+
+      h2 {
+        font-size: 50px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+
+    .participantsCards {
+      margin-top: 3%;
+
+      .card {
+        width: 100%;
+
+        .img {
+          width: 95%;
+          height: 78%;
+        }
+
+        .informations {
+          width: 95%;
+
+          .left {
+            h3 {
+              font-size: 25px;
+            }
+
+            p {
+              font-size: 15px;
+            }
+          }
+
+          img {
+            width: 12%;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 541px) {
@@ -416,9 +461,42 @@ body {
     }
   }
 
+  .whoWeAre {
+    .imgBackground {
+      height: 35%;
+      h2 {
+        font-size: 35px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    .participantsCards {
+      .card {
+        .informations {
+          .left {
+            h3 {
+              font-size: 25px;
+            }
+
+            p {
+              font-size: 15px;
+            }
+          }
+
+          img {
+            width: 18%;
+          }
+        }
+      }
+    }
+  }
+
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 325px) {
 
   .introductionHome {
     .openingText {
@@ -434,6 +512,48 @@ body {
     .sloganText {
       p {
         font-size: 20px;
+      }
+    }
+  }
+
+  .whoWeAre {
+    .imgBackground {
+      height: 30%;
+      h2 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .participantsCards {
+      margin-top: 3%;
+      .card {
+        width: 100%;
+        .img {
+          width: 100%;
+          height: 78%;
+        }
+
+        .informations {
+          width: 100%;
+
+          .left {
+            h3 {
+              font-size: 20px;
+            }
+
+            p {
+              font-size: 12px;
+            }
+          }
+
+          img {
+            width: 22%;
+          }
+        }
       }
     }
   }
