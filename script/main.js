@@ -1,3 +1,6 @@
+
+// Start Home Animation
+
 var tl = gsap.timeline();
 var tween = gsap.fromTo("#initial", { height: "100%", width: "100%", opacity: 1 }, { height: "60%", width: "60%", opacity: 0.5, delay: 1 });
 tl.add(tween);
@@ -20,4 +23,36 @@ window.addEventListener("scroll", () => {
     if (window.scrollY > (window.innerHeight * 2.2)) { sloganText.style.opacity = "1"; } else { sloganText.style.opacity = "0" }
 })
 
-AOS.init();
+// Open Cards Description
+
+var cardsImg = document.querySelectorAll(".cardsImg");
+var cardInformations = document.querySelectorAll(".cardInformations")
+var on = false
+
+cardsImg.forEach(it => {
+    it.addEventListener("click", () => {
+        if(!on) {
+            cardInformations.forEach(information => {
+                upperCaseId = it.id.toUpperCase()
+                if(information.id == upperCaseId) {
+                    window.scroll({ top: innerHeight * 5.15, behavior: "smooth" })
+                    document.querySelector(".participantsCards").style.display = "none";
+                    document.querySelector(".descriptions").style.display = "block";
+                    information.style.display = "block"
+
+                    console.log(information)
+                    document.querySelector("#" + information.id + " .close").addEventListener("click", () => {
+                        if(on) {
+                            document.querySelector(".participantsCards").style.opacity = 1;
+                            document.querySelector(".participantsCards").style.display = "flex";
+                            document.querySelector(".descriptions").style.display = "none";
+                            information.style.display = "none"
+                            on = !on
+                        }
+                    })
+                }
+            })
+            on = !on
+        }
+    })
+})
