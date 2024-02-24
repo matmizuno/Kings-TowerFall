@@ -10,9 +10,6 @@ body{
     background-color: #242424;
     font-family: 'Rubik', sans-serif;
 }
-h1,h2,h3,p{
-    color: #fff;
-}
 
 .container-home{
     width: 100%;
@@ -42,24 +39,61 @@ height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
-}
-.arrow-icon{
-    width: 40px;
     animation: mov-img 3s ease-in-out infinite;
-    margin-top: 2rem;
+    margin-top: 3rem;
+}
+.icon a{
+    color: #fff9f9;
+}
+#arrow
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 3rem;
+    font-size: 2rem;
+
 }
 
-.geral{
+.about{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-   
-
+    align-items: center;
+    .image-size{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-fluid{
+        width: 500px;
+        
+    }
+    .texts-about{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .texts-insights{
+        width: 73%;
+    }
 }
 
 
 @media screen and (max-width:1024px){
+    .container-home{
+        width: 100%;
+        height: 645px;
+        display: flex; 
+        flex-direction: column;
+    }
     .texts{
         margin-top: 5rem;
         margin-left: 1rem;
@@ -74,8 +108,34 @@ height: 100%;
     #inp{
         display: none;
     }
-    
-    
+    .about{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .image-size{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-fluid{
+            width: 500px;
+            
+        }
+        .texts-about{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .texts-insights{
+                width: 90%;
+            }
+            
+        }
+    }
+
 }
 
 @keyframes mov-img{
