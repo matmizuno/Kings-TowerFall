@@ -9,6 +9,7 @@ body{
     padding: 0px;
     background-color: #242424;
     font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
 }
 
 .container-home{
