@@ -38,7 +38,7 @@ cardsImg.forEach(it => {
                     window.scroll({ top: innerHeight * 5.15, behavior: "smooth" })
                     document.querySelector(".participantsCards").style.display = "none";
                     document.querySelector(".descriptions").style.display = "block";
-                    information.style.display = "block"
+                    information.style.display = "flex"
 
                     console.log(information)
                     document.querySelector("#" + information.id + " .close").addEventListener("click", () => {
