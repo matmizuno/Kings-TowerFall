@@ -182,9 +182,29 @@ body {
       display: none;
       align-items: center;
       justify-content: center;
-      background-color: #121212;
       background-position: center;
       background-size: cover;
+
+      .close {
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        cursor: pointer;
+        font-size: 40px;
+        transition: all 0.2s ease-in-out;
+        z-index: 99;
+
+        &:hover {
+          opacity: 0.8;
+          transform: rotateZ(90deg);
+          color: #a1a1a1;
+        }
+
+        &:active {
+          opacity: 0.6;
+          transform: scale(0.8);
+        }
+      }
 
       .blur {
         width: 100%;
@@ -201,26 +221,6 @@ body {
         align-items: center;
         justify-content: center;
         position: relative;
-
-        .close {
-          position: absolute;
-          top: 2%;
-          left: 5%;
-          cursor: pointer;
-          font-size: 40px;
-          transition: all 0.2s ease-in-out;
-
-          &:hover {
-            opacity: 0.8;
-            transform: rotateZ(90deg);
-            color: #a1a1a1;
-          }
-
-          &:active {
-            opacity: 0.6;
-            transform: scale(0.8);
-          }
-        }
 
         .container-information {
 
@@ -258,6 +258,28 @@ body {
             }
           }
         }
+
+        .social-out {
+          display: none;
+          user-select: none;
+          margin-top: 8%;
+
+          svg {
+            fill: #ffffff;
+            width: 50px;
+            cursor: pointer;
+            transition: all 0.2s linear;
+
+            &:hover {
+              opacity: 0.8;
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        .text {
+          display: none;
+        }
       }
 
       .projects {
@@ -274,7 +296,6 @@ body {
 .swiper {
   width: 85%;
   height: 60%;
-  overflow-y: visible;
 
   .swiper-slide {
     font-size: 18px;
@@ -285,17 +306,17 @@ body {
       transition: all 0.5s linear;
 
       width: 100%;
-      position: absolute;
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: rgba(17, 17, 17, 0);
       color: #fff;
-      height: 100%;
 
       a {
+        position: absolute;
         transition: all 0.8s linear;
         opacity: 0;
+        z-index: 99;
 
         button {
           background-color: #00000000;
@@ -322,13 +343,11 @@ body {
       }
     }
 
-    .open:hover {
-      border-radius: 10px;
-      background-color: #000000ac;
-
-      a {
-        opacity: 1;
-      }
+    .blur-projects {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transition: all 0.2s linear;
     }
 
     img {
@@ -337,8 +356,19 @@ body {
       border-radius: 10px;
     }
 
-  }
+    .open:hover {
+      border-radius: 10px;
+      background-color: #000000;
 
+      a {
+        opacity: 1;
+      }
+
+      .blur-projects {
+        backdrop-filter: blur(1px);
+      }
+    }
+  }
 }
 
 
@@ -453,6 +483,77 @@ body {
         }
       }
     }
+
+    .descriptions {
+      width: 100%;
+      height: max-content;
+
+      .cardInformations {
+        width: 100%;
+        padding-bottom: 5%;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+
+        .close {
+          font-size: 35px;
+        }
+
+        .information {
+          width: 100%;
+
+          .container-information {
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+
+            img {
+              width: 80px;
+              margin-bottom: 0%;
+              margin-right: 4%;
+            }
+
+            .text-information {
+              margin-left: 4%;
+            }
+
+            .social {
+              margin-top: 0%;
+              display: none;
+            }
+          }
+
+          .text {
+            display: flex;
+            width: 94%;
+            margin-top: 10%;
+          }
+
+          .social-out {
+            display: flex;
+          }
+        }
+
+        .projects {
+          margin-top: 10%;
+          margin-bottom: 5%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .swiper {
+    width: 92%;
+    height: fit-content;
+
+    .swiper-slide {
+      img {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -523,6 +624,73 @@ body {
         }
       }
     }
+
+    .descriptions {
+      width: 100%;
+
+      .cardInformations {
+        /* width: 100%; */
+        /* min-height: 100vh; */
+        /* flex-direction: column-reverse; */
+
+        .close {
+          font-size: 35px;
+        }
+
+        .information {
+          width: 100%;
+          height: fit-content;
+
+          .container-information {
+
+            img {
+              width: 50px;
+              margin-right: 3%;
+            }
+
+            h2 {
+              font-size: 22px;
+            }
+
+            p {
+              font-size: 15px;
+            }
+
+            .text-information {
+              margin-left: 3%;
+            }
+          }
+
+          .text {
+            width: 94%;
+            margin-top: 10%;
+          }
+
+          .social-out {
+            svg {
+              width: 50px;
+            }
+          }
+        }
+
+        .projects {
+          margin-top: 20%;
+          height: fit-content;
+        }
+      }
+    }
+  }
+
+  .swiper {
+    width: 100%;
+
+    .swiper-slide {
+      overflow: hidden;
+
+      img {
+        border-radius: 0%;
+      }
+    }
   }
 }
 
@@ -548,7 +716,7 @@ body {
 
   .whoWeAre {
     .imgBackground {
-      height: 35%;
+      height: 200px;
 
       h2 {
         font-size: 35px;
@@ -580,6 +748,19 @@ body {
     }
   }
 
+
+  .swiper {
+    width: 100%;
+
+    .swiper-slide {
+      overflow: hidden;
+
+      img {
+        width: 120%;
+        border-radius: 0%;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 325px) {
@@ -641,6 +822,44 @@ body {
 
           img {
             width: 22%;
+          }
+        }
+      }
+    }
+
+    .descriptions {
+      .cardInformations {
+
+        .information {
+          .container-information {
+
+            margin-top: 5%;
+            img {
+              width: 50px;
+              margin-right: 3%;
+            }
+
+            h2 {
+              font-size: 22px;
+            }
+
+            p {
+              font-size: 15px;
+            }
+
+            .text-information {
+              margin-left: 3%;
+            }
+          }
+
+          .text {
+            margin-top: 10%;
+          }
+
+          .social-out {
+            svg {
+              width: 45px;
+            }
           }
         }
       }
