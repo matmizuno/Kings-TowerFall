@@ -14,10 +14,11 @@ body{
 
 .container-home{
     width: 100%;
-    height: 550px;
+    height: 600px;
     display: flex; 
     flex-direction: column;
 }
+
 .home-dash{
 width: 100%;
 height: 100%;
@@ -58,6 +59,46 @@ height: 100%;
     font-size: 2rem;
 
 }
+.geral{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.cards-geral-item1{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.item2{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+   
+}
+.visao-geral-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 300px;
+    border: 1px solid #9c9a9a;
+    border-radius: 10px;
+}
+.texts-geral{
+    width: 420px;
+}
+.img-icon{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icons{
+    width: 110px;
+}
 
 
 
@@ -79,9 +120,14 @@ height: 100%;
     .text_introducao-icon{
         width: 90%;
     }
-    #inp{
-        display: none;
+    .geral{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+  
     
 
 }
