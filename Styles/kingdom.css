@@ -5,12 +5,25 @@ body
     background-image: url(../assets/background_kingdom.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    background-color: rgb(40, 40, 40);
 }
 header
 {
     width: 100%;
     padding: 10px 55px;
-    backdrop-filter: blur(4px);
+    height: 70px;
+}
+
+header::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    backdrop-filter: blur(20px);
+    z-index: -2;
 }
 #navbar
 {
@@ -34,20 +47,29 @@ header
     align-items: center;
     color: white;
 }
-#logos h1
+#logo_game img
 {
     padding-left: 10px;
+    width: 100%;
 }
 #nav_list
 {
     display: flex;
     list-style: none;
+}
+#container
+{
+    display: flex;
     gap: 5rem;
 }
-.nav_link
+.nav_item
+{
+    display: flex;
+}
+.nav_link, .nav_link_active
 {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 500;
     text-transform: lowercase;
     font-size: 1.1rem;
@@ -55,44 +77,45 @@ header
     padding: 0 10px;
     position: relative;
 }
-.nav_link::after
+.nav_link::after, .nav_link_active::before
 {
     content: "";
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: black;
     height: 3px;
     width: 0%;
     left: 0;
     bottom: -10px;
 }
+.nav_link_active::before
+{
+    width: 100%;
+}
 .nav_link:hover::after
 {
-    color: white;
+    color: black;
     transition: color 0.5s ease-in-out;
     width: 100%;
     transition: all 0.5s ease-in-out;
 }
-.nav_link:hover
-{
-    color: white;
-    transition: all 0.5s ease-in-out;
-}
+
 #btn_comprar
 {
     background: transparent;
     border: none;
-    border: 3px solid black;
+    border: 3px solid white;
     padding: 0px 25px;
     text-transform: uppercase;
     font-weight: 600;
     border-radius: 10px;
     cursor: pointer;
+    color: white;
 }
 #btn_comprar:hover
 {
-    background-color: black;
-    border:3px solid black;
-    color: white;
+    background-color: white;
+    border:3px solid white;
+    color: black;
     transition: all .5s ease-in-out;
 }
 #user_area
@@ -109,7 +132,7 @@ header
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color: black;
+    color: white;
     font-size: 1.1rem;
 }
 .sec1
@@ -139,6 +162,10 @@ header
     height: 100%;
     padding-bottom: 3rem;
     font-size: 2rem;
+    z-index: -1;
+}
+#arrow i
+{
     animation: up-down 2s ease-in-out infinite;
 }
 
@@ -151,5 +178,231 @@ header
     }
     100%{
         transform: translateY(-10px);
+    }
+}
+
+
+
+.hamburguer
+{
+    display: none;
+    cursor: pointer;
+}
+.bar
+{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+
+.btn_comprar_mobile
+{
+    display: none;
+    background: #5f5b5b;
+    border: none;
+    border: 8px solid black;
+    padding: 0px 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+}
+.btn_comprar_mobile:hover
+{
+    background-color: white;
+    border:3px solid white;
+    color: black;
+    transition: all .5s ease-in-out;
+}
+
+#header_footer
+{
+    display: none;
+}
+#logo_footer a
+{
+    display: none;
+}
+
+@media (max-width: 1300px){
+    #nav_list #container
+    {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 1250px) {
+    header{
+        padding: 10px 30px;
+    }
+    
+    #nav_list #container
+    {
+        gap: 1rem;
+    }
+    #user_area{
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 1030px){
+    body{
+        background-image: url(../assets/background_mobile.png);
+    }
+
+    #logo_sec img{
+        display: none;
+    }
+    #logo_game img
+    {
+        width: 80%;
+    }
+    #logos a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #btn_comprar
+    {
+        display: none;
+    }
+    .btn_comprar_mobile
+    {
+        display: block;
+        width: 100%;
+        border: none;
+    }
+    .hamburguer
+    {
+        display: block;
+    }
+    .hamburguer.active .bar:nth-child(1)
+    {
+        transform: translateY(8px);
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(2)
+    {
+        opacity: 1;
+    }
+    .hamburguer.active .bar:nth-child(3)
+    {
+        transform: translateY(-8px);
+        opacity: 0;
+    }
+    #nav_list
+    {
+        top: -1500%;
+        margin-top: 70px;
+        position: absolute;
+        text-align: center;
+        flex-direction: column;
+        gap: 0.3rem;
+        width: 100%;
+        height: 80vh;
+        z-index: 10;
+        left: 0;
+        backdrop-filter: blur(10px);
+        justify-content: space-between;
+        transition: all .3s ease;
+        border-radius: 0 0 20px 20px;
+    }
+    #container
+    {
+        flex-direction: column;
+    }
+    .nav_item
+    {
+        padding: 20px 30px;
+    }
+    .nav_item::before, .nav_link_active::before, .nav_link:hover::after
+    {
+        display: none;
+        width: 0%;
+    }
+    .nav_item:nth-child(1){
+        background: rgba(0, 0, 0, .6);
+    }
+    .nav_link
+    {
+        width: 100%;
+        display: flex;
+    }
+    .nav_item:hover
+    {
+        background: rgba(0, 0, 0, .6);
+    }
+    #container.active, #nav_list.active
+    {
+        top: -1%;
+    }
+    
+    
+    .button
+    {
+        height: 150px;
+        width: 100%;
+        padding: 35px 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #user_area span 
+    {
+        padding: 10px;
+    }
+
+    #titulo_jogo
+    {
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #titulo_jogo img
+    {
+        width: 100%;
+    }
+    #header_footer
+    {
+       
+        width: 100%;
+        height: 15vh;
+        background: rgba(53, 50, 50, 0.6);
+        border-radius: 0 0 20px 20px;
+        padding: 30px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #logo_footer a
+    {
+        display: block;
+        width: 100%;
+        height: 100%;
+        
+    }
+    #logo_footer
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:0.5rem;
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    #logo_footer img
+    {
+        width: 30%;
     }
 }

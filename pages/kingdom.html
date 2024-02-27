@@ -15,32 +15,61 @@
 <body>
     <header>
         <nav id="navbar">
+
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
             <div id="logos">
-                <a href="../index.html" id="logo_sec" ><img src="../assets/logo_simples.png" alt="circulo redondo de cor azulada"></a> 
-                <h1> Kingdom Algorithm</h1>
+                <a target="_blank" href="../index.html" id="logo_sec" aria-current="page"><img src="../assets/logo_simples.png" alt="circulo redondo de cor azulada"></a> 
+                <a href="../pages/kingdom.html" id="logo_game"><img src="../assets/titulo_ mobile 1.png" alt="Logo do jogo kingdom Algorithm"></a>
             </div>
            
             <ul id="nav_list">
-                <li class="nav_item">
-                    <a href="#overviw" class="nav_link">Overview</a>
-                </li>
-            
-                <li class="nav_item">
-                    <a href="#explorar" class="nav_link">Explorar</a>
-                </li>    
-           
-                <li class="nav_item">
-                    <a href="#mídia" class="nav_link">Mídia</a>
-                </li>
-            
-                <li class="nav_item">
-                    <a href="#locais" class="nav_link">Locais</a>
-                </li>
+                <div id="container">
+
+                    <li class="nav_item">
+                        <a href="#overviw" class="nav_link_active">Overview</a>
+                    </li>
+                
+                    <li class="nav_item">
+                        <a href="#explorar" class="nav_link">Explorar</a>
+                    </li>    
+               
+                    <li class="nav_item">
+                        <a href="#mídia" class="nav_link">Mídia</a>
+                    </li>
+                
+                    <li class="nav_item">
+                        <a href="#locais" class="nav_link">Locais</a>
+                    </li>
+
+                </div>
+                
+
+                <div class="button">
+                    <button class="btn_comprar_mobile">Compre Agora</button>
+                </div>
+
+                <div id="header_footer">
+                    <a href="../index.html" target="_blank" id="logo_footer">
+                        <img src="../assets/logo_simples.png" alt="circulo redondo de cor azulada">
+                        Inicio
+                    </a> 
+                
+                </div>
+    
+
             </ul>
+
+ 
             <div id="user_area">
                 <button id="btn_comprar">Compre Agora</button>
                 <span><i class="fa-regular fa-user"></i></span>
             </div>
+            
         </nav>
     </header>
     <main>
@@ -53,5 +82,21 @@
             </div>
         </section>
     </main>
+
+
+
+
+
+
+    <script>
+        const hamburguer = document.querySelector(".hamburguer");
+        const navList = document.querySelector("#nav_list");
+
+        hamburguer.addEventListener("click", () => {
+            hamburguer.classList.toggle('active');
+            navList.classList.toggle('active');
+        })
+
+    </script>
 </body>
 </html>
