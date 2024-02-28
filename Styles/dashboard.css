@@ -52,9 +52,7 @@ height: 100%;
     color: white;
     display: flex;
     justify-content: center;
-    align-items: end;
     width: 100%;
-    height: 100%;
     padding-bottom: 3rem;
     font-size: 2rem;
 
@@ -63,6 +61,13 @@ height: 100%;
     width: 100%;
     display:flex ;
     flex-direction: column;
+}
+.tilte-geral{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 3rem;
 }
 .visao-geral-download{
     width: 100%;
@@ -107,8 +112,14 @@ height: 100%;
     justify-content: center;
     flex-direction: column;
 }
+.item2-download h2{
+margin-top: -1rem;
+}
+.item2-Comments .icons{
+    margin-top: -4rem;
+}
 .numeros{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .desc{
     margin-top: 1rem;
@@ -123,7 +134,7 @@ height: 100%;
 @media screen and (max-width:1024px){
     .container-home{
         width: 100%;
-        height: 645px;
+        height: 670px;
         display: flex; 
         flex-direction: column;
     }
@@ -136,7 +147,14 @@ height: 100%;
         font-size:50px;
     }
     .text_introducao-icon{
-        width: 90%;
+        width: 100%;
+    }
+    #arrow{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
     }
     .visao-geral-Comments{
         margin-top: 5rem;
@@ -173,6 +191,12 @@ height: 100%;
     
     .desc{
         width: 300px;
+    }
+    .item2-download h2{
+        margin-top: -0rem;
+        }
+    .item2-Comments .icons{
+        margin-top: -0rem;
     }
   
     
