@@ -12,9 +12,6 @@ body{
     overflow-x: hidden;
 }
 
-p{
-    
-}
 .container-home{
     width: 100%;
     height: 600px;
@@ -64,44 +61,62 @@ height: 100%;
 }
 .geral{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-.cards-geral-item1{
-    width: 65%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.item2{
-    width: 35%;
-    display: flex;
+    display:flex ;
     flex-direction: column;
-   
 }
-.visao-geral-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 400px;
-    width: 300px;
-    border: 1px solid #9c9a9a;
-    border-radius: 10px;
-}
-.texts-geral{
-    width: 420px;
-}
-.img-icon{
+.visao-geral-download{
     width: 100%;
-    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.item1-download{
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+}
+
+.item2-download{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.visao-geral-Comments{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.item1-Comments{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item2-Comments{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.numeros{
+    margin-top: 2rem;
+}
+.desc{
+    margin-top: 1rem;
 }
 .icons{
-    width: 110px;
-}
+    width: 120px;
+} 
+
 
 
 
@@ -123,12 +138,41 @@ height: 100%;
     .text_introducao-icon{
         width: 90%;
     }
-    .geral{
+    .visao-geral-Comments{
+        margin-top: 5rem;
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+    }
+    .item1-Comments{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .item2-Comments{
+        margin-top: 1.5rem;
+    }
+    .visao-geral-download{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .item2-download{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .desc{
+        width: 300px;
     }
   
     
