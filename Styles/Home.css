@@ -70,32 +70,32 @@ body {
   }
 }
 
+.imgBackground {
+  height: 300px;
+  background-image: url("../assets/backgroundTest.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h2 {
+    font-size: 70px;
+  }
+
+  p {
+    font-size: 25px;
+    margin-top: 1%;
+  }
+}
+
 .whoWeAre {
   position: relative;
   width: 100%;
-
-  .imgBackground {
-    height: 300px;
-    background-image: url("../assets/backgroundTest.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    h2 {
-      font-size: 70px;
-    }
-
-    p {
-      font-size: 25px;
-      margin-top: 1%;
-    }
-  }
 
   .participantsCards {
     display: flex;
@@ -400,18 +400,19 @@ body {
     }
   }
 
-  .whoWeAre {
-    .imgBackground {
-      height: 280px;
+  .imgBackground {
+    height: 280px;
 
-      h2 {
-        font-size: 60px;
-      }
-
-      p {
-        font-size: 22px;
-      }
+    h2 {
+      font-size: 60px;
     }
+
+    p {
+      font-size: 22px;
+    }
+  }
+
+  .whoWeAre {
 
     .participantsCards {
       margin-top: 2%;
@@ -581,18 +582,18 @@ body {
     }
   }
 
-  .whoWeAre {
-    .imgBackground {
-      height: 250px;
+  .imgBackground {
+    height: 250px;
 
-      h2 {
-        font-size: 50px;
-      }
-
-      p {
-        font-size: 20px;
-      }
+    h2 {
+      font-size: 50px;
     }
+
+    p {
+      font-size: 20px;
+    }
+  }
+  .whoWeAre {
 
     .participantsCards {
       margin-top: 3%;
@@ -714,18 +715,18 @@ body {
     }
   }
 
-  .whoWeAre {
-    .imgBackground {
-      height: 200px;
+  .imgBackground {
+    height: 200px;
 
-      h2 {
-        font-size: 35px;
-      }
-
-      p {
-        font-size: 15px;
-      }
+    h2 {
+      font-size: 35px;
     }
+
+    p {
+      font-size: 15px;
+    }
+  }
+  .whoWeAre {
 
     .participantsCards {
       .card {
@@ -783,18 +784,18 @@ body {
     }
   }
 
-  .whoWeAre {
-    .imgBackground {
-      height: 200px;
+  .imgBackground {
+    height: 200px;
 
-      h2 {
-        font-size: 30px;
-      }
-
-      p {
-        font-size: 12px;
-      }
+    h2 {
+      font-size: 30px;
     }
+
+    p {
+      font-size: 12px;
+    }
+  }
+  .whoWeAre {
 
     .participantsCards {
       margin-top: 3%;
@@ -834,6 +835,7 @@ body {
           .container-information {
 
             margin-top: 5%;
+
             img {
               width: 50px;
               margin-right: 3%;
@@ -866,4 +868,173 @@ body {
     }
   }
 
+}
+
+.aboutUs {
+  overflow: hidden;
+  width: 100%;
+}
+
+.about-us {
+  padding: 1% 0;
+  display: flex;
+}
+
+.left-size {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-abt {
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  h4 {
+      font-size: 60px;
+      font-weight: 300;
+      line-height: 1.5;
+      margin: 0 0 5% 0;
+      width: 100%;
+  }
+
+  p {
+      width: 85%;
+      font-size: 23px;
+      font-weight: 300;
+  }
+}
+
+.img-abt {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 5% 0;
+
+  img {
+      width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+
+  .text {
+      h4 {
+          font-size: 55px;
+          line-height: 1.2;
+      }
+
+      p {
+          width: 100%;
+      }
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .container-abt {
+      width: 75%;
+
+      display: flex;
+      flex-direction: column;
+  }
+
+  .text {
+      h4 {
+          font-size: 50px;
+          margin: 0 0 5% 0;
+      }
+
+      p {
+          width: 100%;
+      }
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  .about-us {
+      padding: 5% 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+
+  .left-size {
+      width: 90%;
+  }
+
+  .container-abt {
+      width: 90%;
+      align-items: center;
+  }
+
+  .text {
+    width: 100%;
+    text-align: center;
+      h4 {
+          font-size: 60px;
+          margin: 0 0 8% 0;
+      }
+
+      p {
+          width: 100%;
+      }
+  }
+
+  .img-abt {
+      margin: 5% 0 10% 0;
+      width: 85%;
+
+      img {
+          width: 50%;
+      }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+
+  .left-size {
+      width: 90%;
+  }
+
+  .container-abt {
+      width: 100%;
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+      h4 {
+          font-size: 40px;
+      }
+
+      p {
+          width: 80%;
+          font-size: 16px;
+      }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+
+  .text {
+      h4 {
+          font-size: 35px;
+      }
+
+      p {
+          width: 100%;
+          font-size: 16px;
+      }
+  }
 }
