@@ -593,6 +593,7 @@ body {
       font-size: 20px;
     }
   }
+
   .whoWeAre {
 
     .participantsCards {
@@ -726,6 +727,7 @@ body {
       font-size: 15px;
     }
   }
+
   .whoWeAre {
 
     .participantsCards {
@@ -795,6 +797,7 @@ body {
       font-size: 12px;
     }
   }
+
   .whoWeAre {
 
     .participantsCards {
@@ -897,17 +900,17 @@ body {
 
 .text {
   h4 {
-      font-size: 60px;
-      font-weight: 300;
-      line-height: 1.5;
-      margin: 0 0 5% 0;
-      width: 100%;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0 0 5% 0;
+    width: 100%;
   }
 
   p {
-      width: 85%;
-      font-size: 23px;
-      font-weight: 300;
+    width: 85%;
+    font-size: 23px;
+    font-weight: 300;
   }
 }
 
@@ -920,93 +923,94 @@ body {
   margin: 5% 0;
 
   img {
-      width: 80%;
+    width: 80%;
   }
 }
 
 @media only screen and (max-width: 1160px) {
 
   .text {
-      h4 {
-          font-size: 55px;
-          line-height: 1.2;
-      }
+    h4 {
+      font-size: 55px;
+      line-height: 1.2;
+    }
 
-      p {
-          width: 100%;
-      }
+    p {
+      width: 100%;
+    }
   }
 }
 
 @media only screen and (max-width: 1060px) {
   .container-abt {
-      width: 75%;
+    width: 75%;
 
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   .text {
-      h4 {
-          font-size: 50px;
-          margin: 0 0 5% 0;
-      }
+    h4 {
+      font-size: 50px;
+      margin: 0 0 5% 0;
+    }
 
-      p {
-          width: 100%;
-      }
+    p {
+      width: 100%;
+    }
   }
 }
 
 @media only screen and (max-width: 912px) {
   .about-us {
-      padding: 5% 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
 
   .left-size {
-      width: 90%;
+    width: 90%;
   }
 
   .container-abt {
-      width: 90%;
-      align-items: center;
+    width: 90%;
+    align-items: center;
   }
 
   .text {
     width: 100%;
     text-align: center;
-      h4 {
-          font-size: 60px;
-          margin: 0 0 8% 0;
-      }
 
-      p {
-          width: 100%;
-      }
+    h4 {
+      font-size: 60px;
+      margin: 0 0 8% 0;
+    }
+
+    p {
+      width: 100%;
+    }
   }
 
   .img-abt {
-      margin: 5% 0 10% 0;
-      width: 85%;
+    margin: 5% 0 10% 0;
+    width: 85%;
 
-      img {
-          width: 50%;
-      }
+    img {
+      width: 50%;
+    }
   }
 }
 
 @media only screen and (max-width: 575px) {
 
   .left-size {
-      width: 90%;
+    width: 90%;
   }
 
   .container-abt {
-      width: 100%;
+    width: 100%;
   }
 
   .text {
@@ -1014,27 +1018,53 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-      h4 {
-          font-size: 40px;
-      }
 
-      p {
-          width: 80%;
-          font-size: 16px;
-      }
+    h4 {
+      font-size: 40px;
+    }
+
+    p {
+      width: 80%;
+      font-size: 16px;
+    }
   }
 }
 
 @media only screen and (max-width: 350px) {
 
   .text {
-      h4 {
-          font-size: 35px;
-      }
+    h4 {
+      font-size: 35px;
+    }
 
-      p {
-          width: 100%;
-          font-size: 16px;
+    p {
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+}
+
+.ourValues {
+
+  .values {
+    padding: 2% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .activeValue {
+      width: 900px;
+      height: 700px;
+      background-color: #a1a1a1;
+    }
+    
+    .listValues {
+      margin-left: 20px;
+      .value {
+        width: 300px;
+        height: 220.5px;
+        background-color: #a1a1a1;
       }
+    }
   }
 }
