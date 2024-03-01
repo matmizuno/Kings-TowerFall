@@ -35,7 +35,7 @@ cardsImg.forEach(it => {
             cardInformations.forEach(information => {
                 upperCaseId = it.id.toUpperCase()
                 if(information.id == upperCaseId) {
-                    window.scroll({ top: innerHeight * 6.15, behavior: "smooth" })
+                    window.scroll({ top: innerHeight * 10.15, behavior: "smooth" })
                     document.querySelector(".participantsCards").style.display = "none";
                     document.querySelector(".descriptions").style.display = "block";
                     information.style.display = "flex"

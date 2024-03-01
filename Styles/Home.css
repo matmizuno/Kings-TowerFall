@@ -1,6 +1,6 @@
 body {
   color: #ffffff;
-  background: #060606;
+  background: #131313;
   overflow-x: hidden;
 }
 
@@ -90,6 +90,23 @@ body {
   p {
     font-size: 25px;
     margin-top: 1%;
+  }
+}
+
+
+.motivations {
+  padding: 2% 0;
+  text-align: center;
+  background-color: #000000;
+
+  .titleMotivations {
+    font-size: 70px;
+  }
+
+  .subTitleMotivations {
+    font-size: 20px;
+    margin-top: 1%;
+    font-weight: 100;
   }
 }
 
