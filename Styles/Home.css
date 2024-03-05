@@ -99,79 +99,19 @@ body {
 
 .motivations {
   padding: 5% 0;
-  text-align: center;
   background-color: #000000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 
   .titleMotivations {
+    text-align: center;
     font-size: 70px;
   }
 
   .subTitleMotivations {
+    text-align: center;
     font-size: 25px;
     margin-top: 1%;
     font-weight: 100;
     margin-bottom: 2%;
-  }
-
-  .motivationsItens {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    margin-top: 2%;
-
-    .item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      flex-direction: column;
-      position: relative;
-      overflow: hidden;
-      
-      width: 30%;
-      height: 700px;
-
-      h4 {
-        position: absolute;
-        font-size: 30px;
-        transition: all 0.5s ease-in;
-        opacity: 1;
-      }
-
-      .textItem {
-        position: absolute;
-        opacity: 0;
-        transition: all 0.5s ease-in;
-      }
-
-      &:hover {
-        
-        h4 {
-          opacity: 0;
-        }
-
-        .textItem {
-          opacity: 1;
-        }
-      }
-    }
-
-    .item:nth-child(1) {
-      border-left: 1px solid #fff;
-    }
-
-    .item:nth-child(2) {
-      border-left: 1px solid #fff;
-      border-right: 1px solid #fff;
-    }
-    .item:nth-child(3) {
-      border-right: 1px solid #fff;
-    }
   }
 }
 
