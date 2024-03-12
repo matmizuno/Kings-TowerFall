@@ -1,174 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
-
-html{
-    scroll-behavior: smooth;
-}
-
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #1b1b1b;
-    font-family: 'Rubik', sans-serif;
-    overflow-x: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #000000;
 }
-nav{
-    height: 60px;
-    background-color: #494848;
-
-    a{
-        margin-left: 2rem;
-        color: #fff;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    .container-fluid{
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-}
-.container-home{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    .home-dash{
-        width: 50%;
-        height: 100%;
-        margin-left: 4rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-     
-     
-        .texts{
-            width: 100%;
-            h2{
-                font-size: 60px;
-                color: #e6e5e5;
-                margin: 0px;
-            }
-            
-            .text_introducao-icon{
-            
-                margin-top: 1.5rem;
-              
-                p{
-                    color: #e6e5e5;
-                    font-size: 20px;
-                }
-            }
-        
-        }
-    }
-    .icon{
-        margin-top: 5rem;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        a{
-            color: #fff;
-            font-size: 35px;
-            animation: mov-img 3s ease-in-out infinite ;
-        }
-        
-    }
-
-}
-
-
-
-
-.geral{
-    width: 100%;
-    display:flex ;
-    flex-direction: column;
-    color: #fff;;
-    h2{
-        font-size: 30px;
-    }
-    p,h5{
-        font-size: 20px;
-    }
-}
-.tilte-geral{
-    width: 100%;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    margin-bottom: 3rem;
-}
-.tilte-geral h2{
-    border-bottom: 1px solid #fff;
+h2,p,a{
+    margin: 0px;
     color: #fff;
-    font-size: 40px;
 }
-.visao-geral-download{
+
+.home{
+    background-image: url(../assets/DashboardWpp.jpg);
+    background-size: cover;
+height: 100vh;
+width: 100% ;
+display: flex;
+flex-direction: column;
+justify-content: center;
+.txt-home{
+    width: 70%;
+    margin-left: 3rem;
+    h2{
+        font-size: 75px;
+    }
+    p{
+        font-size:19px;
+        margin-top: 1rem;
+       
+    }
+   
+   
+}
+.icon{
     width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
+    margin-top: 5rem;
+    a{
+        font-size: 30px;
+        animation: mov-icon 2.5s ease-in-out infinite;
+    }
 }
-.item1-download{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
-
-.item2-download{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.geral{
+    height: 100vh;
+width: 100% ;
 }
-.visao-geral-Comments{
-    margin-top: 3rem;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.item1-Comments{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.item2-Comments{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.item2-download h2{
-margin-top: -1rem;
-}
-.item2-Comments .icons{
-    margin-top: -4rem;
-}
-.numeros{
-    margin-top: 1rem;
-}
-.desc{
-    margin-top: 1rem;
-}
-.icons{
-    width: 150px;
-} 
-
-
-/*animation: mov-img 3s ease-in-out infinite;*/
-@keyframes mov-img {
-    0%,100%{
-        transform: translateY(0px);
+@keyframes mov-icon{
+    0%{
+        transform: translateY(-10px);
     }
     50%{
-        transform: translateY(-7px);
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-10px);
     }
 }
