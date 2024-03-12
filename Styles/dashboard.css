@@ -2,26 +2,26 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #000000;
+    background-color: #242424;
 }
-h2,p,a{
+h2,p,a,h5{
     margin: 0px;
-    color: #fff;
+    color: #f1f0f0;
 }
 
 .home{
-    background-image: url(../assets/DashboardWpp.jpg);
+    background-image: url(../assets/DashboardW);
     background-size: cover;
-height: 100vh;
-width: 100% ;
-display: flex;
-flex-direction: column;
-justify-content: center;
+    height: 100vh;
+    width: 100% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 .txt-home{
-    width: 70%;
+    width: 60%;
     margin-left: 3rem;
     h2{
-        font-size: 75px;
+        font-size: 70px;
     }
     p{
         font-size:19px;
@@ -32,19 +32,57 @@ justify-content: center;
    
 }
 .icon{
-    width: 100%;
+    color: white;
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    align-items: end;
+    padding-bottom: 10rem;
+    font-size: 2rem;
+    position: absolute;
+    height: 100%;
+    width: 100%;
     a{
-        font-size: 30px;
         animation: mov-icon 2.5s ease-in-out infinite;
     }
 }
 }
 .geral{
     height: 100vh;
-width: 100% ;
+    width: 100% ;
+    .title-geral{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+        font-size: 30px;
+    }
+    .geral-itens{
+        width: 100%;
+        display: flex;
+       
+    }
+    .icons-geral{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .descricao-geral{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
+   .icon-geral{
+    width: 170px;
+   }
+   .total-geral{
+    margin-top: 2rem;
+   }
+   
+ 
 }
 @keyframes mov-icon{
     0%{
