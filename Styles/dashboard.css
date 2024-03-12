@@ -7,85 +7,89 @@ html{
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #242424;
+    background-color: #1b1b1b;
     font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
 }
+nav{
+    height: 60px;
+    background-color: #494848;
 
+    a{
+        margin-left: 2rem;
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .container-fluid{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
 .container-home{
-    
-    width: 100%;
-    height: 600px;
-    display: flex; 
-    flex-direction: column;
-}
-
-.home-dash{
-width: 100%;
-height: 100%;
-}
-.texts{ 
-    margin-top: 7rem;
-    margin-left: 5.5rem;
-}
-.home-dash .title h2{
-    font-size:50px;
-}
-.text_introducao-icon{
-    width: 45%;
-    margin-top: 3rem;
-}
-.text_introducao p{
-    color: #fff9f9;
-}
-.icon{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    animation: mov-img 3s ease-in-out infinite;
-    margin-top: 3rem;
-}
-.icon a{
-    color: #fff9f9;
-}
-#arrow
-{
-    color: white;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding-bottom: 3rem;
-    font-size: 2rem;
-
-}
-.about{
-    width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: row;
-}
-.item1-about{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-}
-.item2-about{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+    .home-dash{
+        width: 50%;
+        height: 100%;
+        margin-left: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+     
+        .texts{
+            width: 100%;
+            h2{
+                font-size: 60px;
+                color: #e6e5e5;
+                margin: 0px;
+            }
+            
+            .text_introducao-icon{
+            
+                margin-top: 1.5rem;
+              
+                p{
+                    color: #e6e5e5;
+                    font-size: 20px;
+                }
+            }
+        
+        }
+    }
+    .icon{
+        margin-top: 5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        a{
+            color: #fff;
+            font-size: 35px;
+            animation: mov-img 3s ease-in-out infinite ;
+        }
+        
+    }
+
 }
 
-.dashBoard-img{
-    width: 500px;
-}
+
+
+
 .geral{
     width: 100%;
     display:flex ;
     flex-direction: column;
+    color: #fff;;
+    h2{
+        font-size: 30px;
+    }
+    p,h5{
+        font-size: 20px;
+    }
 }
 .tilte-geral{
     width: 100%;
@@ -96,6 +100,8 @@ height: 100%;
 }
 .tilte-geral h2{
     border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 40px;
 }
 .visao-geral-download{
     width: 100%;
@@ -153,97 +159,16 @@ margin-top: -1rem;
     margin-top: 1rem;
 }
 .icons{
-    width: 120px;
+    width: 150px;
 } 
 
 
-
-
-@media screen and (max-width:1024px){
-    .navbar-brand{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-       
-     }
-    .container-home{
-        width: 100%;
-        height: 670px;
-        display: flex; 
-        flex-direction: column;
-    }
-    .texts{
-        margin-top: 5rem;
-        margin-left: 1rem;
-    }
-    
-    .home-dash .title h2{
-        font-size:45px;
-    }
-    .text_introducao-icon{
-        width: 100%;
-    }
-    #arrow{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    
-    }
-    .visao-geral-Comments{
-        margin-top: 5rem;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .item1-Comments{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .item2-Comments{
-        margin-top: 1.5rem;
-    }
-    .visao-geral-download{
-        width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-    }
-    .item2-download{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    
-    .desc{
-        width: 300px;
-    }
-    .item2-download h2{
-        margin-top: -0rem;
-        }
-    .item2-Comments .icons{
-        margin-top: -0rem;
-    }
-  
-    
-
-}
-
-@keyframes mov-img{
+/*animation: mov-img 3s ease-in-out infinite;*/
+@keyframes mov-img {
     0%,100%{
-        transform: translateY(0);
+        transform: translateY(0px);
     }
     50%{
-        transform: translateY(-10px);
+        transform: translateY(-7px);
     }
-    
 }
