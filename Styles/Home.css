@@ -93,65 +93,7 @@ body {
   p {
     font-size: 25px;
     margin-top: 1%;
-  }
-}
-
-
-.motivations {
-  padding: 5% 0;
-  background-color: #000000;
-
-  .titleMotivations {
     text-align: center;
-    font-size: 70px;
-  }
-
-  .subTitleMotivations {
-    text-align: center;
-    font-size: 25px;
-    margin-top: 1%;
-    font-weight: 100;
-    margin-bottom: 2%;
-  }
-
-  .itensMotivations {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    
-    .item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      .information {
-        width: 50%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        .textContainer {
-          width: 90%;
-        }
-
-        h4 {
-          width: 90%;
-          font-size: 45px;
-        }
-
-        p {
-          width: 80%;
-        }
-      }
-
-      .motivationImage {
-        width: 50%;
-      }
-      
-    }
   }
 }
 
@@ -942,6 +884,11 @@ body {
 
 .about-us {
   padding: 1% 0;
+  display: flex;
+}
+
+.txt {
+  width: 100%;
   display: flex;
 }
 
